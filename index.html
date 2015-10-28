@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Art by EssieO</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Arvo|Alex+Brush|Oswald' rel='stylesheet' type='text/css'>
+    <link rel=stylesheet href="css/main.css">
+    <script type='text/javascript'>
+        var startProductBarPos = -1;
+        window.onscroll = function () {
+            var bar = document.getElementById('gallerynav');
+            if (startProductBarPos < 0) startProductBarPos = findPosY(bar);
+
+            if (pageYOffset > startProductBarPos) {
+                bar.style.position = 'fixed';
+                bar.style.top = 0;
+            } else {
+                bar.style.position = 'relative';
+            }
+
+        };
+
+
+        function findPosY(obj) {
+            var curtop = 0;
+            if (typeof (obj.offsetParent) != 'undefined' && obj.offsetParent) {
+                while (obj.offsetParent) {
+                    curtop += obj.offsetTop;
+                    obj = obj.offsetParent;
+                }
+                curtop += obj.offsetTop;
+            } else if (obj.y)
+                curtop += obj.y;
+            return curtop;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header id="top">
+            <h1 id="title"><a href="index.html">Art by EssieO</a></h1>
+            <h2 id="subtitle">Art to love and live with everyday.</h2>
+            <nav>
+                <ul>
+                    <li id="artwork"><a id="selected" href="#gallerynav">Artwork</a>
+                    </li>
+                    <li id="about"><a href="about.html">About</a>
+                    </li>
+                    <li id="events"><a href="events.html">Events</a>
+                    </li>
+                    <li id="contact"><a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <br />
+        </header>
+        <div id="subwrapper">
+            <div id="gallerynav">
+                <ul>
+                    <li><a class="scroll" href="#acrylics">Acrylics</a>
+                    </li>
+                    <li><a class="scroll" href="#photography">Photography</a>
+                    </li>
+                    <li><a class="scroll" href="#watercolors">Watercolors</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div id="gallery">
+                <div id="acrylics">
+                    <div id="h3blackbar">
+                        <h3 class="arttype">Acrylics</h3>
+                    </div>
+                    <div>
+                        <div id="blueimp-gallery-carousel2" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <ol class="indicator"></ol>
+                        </div>
+                        <div id="links2">
+                            <a href="img/acrylics/florida-stonehenge.jpg" title="Florida Stonehenge"></a>
+                            <a href="img/acrylics/bas-relief.jpg" title="Bas Relief"></a>
+                            <a href="img/acrylics/orbs-102.jpg" title="Orbs #102"></a>
+                            <a href="img/acrylics/china/lingnancreek.jpg" title="Ling-nan Creek"></a>
+                            <a href="img/acrylics/china/Bamboo.jpg" title="Bamboo"></a>
+                            <a href="img/acrylics/china/giantpanda.jpg" title="Giant Panda"></a>
+                            <a href="img/acrylics/china/liriverguilin.jpg" title="Li River Guilin"></a>
+                            <a href="img/acrylics/Angelfish.jpg" title="Angelfish"></a>
+                            <a href="img/acrylics/octopus.jpg" title="Octopus"></a>
+                            <a href="img/acrylics/choc.jpg" title="Chocolate Africa"></a>
+                            <a href="img/acrylics/Zanzi.jpg" title="Zanzi"></a>
+                            <a href="img/acrylics/The%20Mask.jpg" title="Mask"></a>
+                            <a href="img/acrylics/force.jpg" title="Force"></a>
+                            <a href="img/acrylics/imagine.jpg" title="Imagine"></a>
+                        </div>
+                    </div>
+                    <span><a class = "scroll arttype" href="#top">Back to top</a></span>
+                </div>
+                <div id="photography">
+                    <div id="h3blackbar">
+                        <h3 class="arttype">Photography</h3>
+                    </div>
+                    <div>
+                        <div id="blueimp-gallery-carousel3" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <ol class="indicator"></ol>
+                        </div>
+                        <div id="links3">
+                            <a href="img/photography/018sm.jpg" title="Deco Lights"></a>
+                            <a href="img/photography/019sm.jpg" title="Park Avenue, NYC"></a>
+                            <a href="img/photography/020sm.jpg" title="Evening Clouds"></a>
+                            <a href="img/photography/maples.jpg" title="Maples"></a>
+                        </div>
+                    </div>
+                    <span><a class = "scroll arttype" href="#top">Back to top</a></span>
+                </div>
+                <div id="watercolors">
+                    <div id="h3blackbar">
+                        <h3 class="arttype">Watercolors</h3>
+                    </div>
+                    <div>
+                        <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel blueimp-gallery-controls">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <ol class="indicator"></ol>
+                        </div>
+                        <div id="links">
+                            <a href="img/watercolors/Peach%20Hibiscus.jpg" title="Peach Hibiscus"></a>
+                            <a href="img/watercolors/_YellowTulips.jpg" title="Yellow Tulips"></a>
+                            <a href="img/watercolors/Red%20Roses.jpg" title="Red Roses"></a>
+                            <a href="img/watercolors/bamboo-spirit.jpg" title="Bamboo Spirit"></a>
+                            <a href="img/watercolors/tropicalcorner.jpg" title="Tropical Corner"></a>
+                        </div>
+                    </div>
+                    <span><a class = "scroll arttype" href="#top">Back to top</a></span>
+                </div>
+            </div>
+            <div>
+                <p>All items are for sale. Bids and/or questions should be sent to: essieo&commat;gmail&period;com</p>
+            </div>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2015 <a href=mailto:him@owenso.com>Owens O'Brien.</a>
+            </p>
+        </footer>
+    </div>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links').getElementsByTagName('a'), {
+                container: '#blueimp-gallery-carousel',
+                carousel: true,
+                startSlideshow: false
+            }
+        );
+    </script>
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links2').getElementsByTagName('a'), {
+                container: '#blueimp-gallery-carousel2',
+                carousel: true,
+                startSlideshow: false
+            }
+        );
+    </script>
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links3').getElementsByTagName('a'), {
+                container: '#blueimp-gallery-carousel3',
+                carousel: true,
+                startSlideshow: false
+            }
+        );
+    </script>
+    <script>
+        blueimp.Gallery(
+            document.getElementById('links4').getElementsByTagName('a'), {
+                container: '#blueimp-gallery-carousel4',
+                carousel: true,
+                startSlideshow: false
+            }
+        );
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script type="text/javascript">
+        $("#title").fitText(1, {
+            minFontSize: '24px',
+            maxFontSize: '120px'
+        });
+        $("#subtitle").fitText(4, {
+            minFontSize: '12px',
+            maxFontSize: '24px'
+        });
+        $(".arttype").fitText(4, {
+            minFontSize: '12px',
+            maxFontSize: '24px'
+        });
+    </script>
+    <script>
+        $(".scroll").click(function (event) {
+            event.preventDefault();
+            //calculate destination place
+            var dest = 0;
+            if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
+                dest = $(document).height() - $(window).height();
+            } else {
+                dest = $(this.hash).offset().top;
+            }
+            //go to destination
+            $('html,body').animate({
+                scrollTop: dest
+            }, 1000, 'swing');
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-56395523-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+
+</html>
